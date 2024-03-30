@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StartLocationActivity">
+
+    <TextView
+        android:id="@+id/downloadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border_background"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="@string/download_data"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp"
+        app:drawableStartCompat="@drawable/download_icon" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F4F4"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/addressTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textStyle="bold"
+                android:textColor="@color/theme_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/locationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_data"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/startService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/border_background"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/start_service"
+                android:paddingVertical="10dp" />
+
+            <TextView
+                android:id="@+id/stopService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/grey_background"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/stop_service"
+                android:paddingVertical="10dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
